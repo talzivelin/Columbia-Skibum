@@ -1,0 +1,59 @@
+
+/* Omni Heat */
+
+.omniHeat {
+  background: #000;
+  height: 433px;
+  text-align: left;
+  h2 {
+    display: block;
+    text-indent: -9999px;
+    width: 474px;
+    height: 27px;
+    background: image-url('omni_heat_ahd.png') 0 50px no-repeat;
+    margin-left: 320px;
+    margin-top: 0;
+    padding-top: 50px;
+    position: relative;
+    z-index: 1000;
+  }
+  p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #ccc;
+    position: relative;
+    z-index: 1000;
+    padding-left: 270px;
+    text-align: center;
+  }
+  .omni-explore {
+    margin-left: 80px;
+    position: relative;
+    z-index: 500;
+    float: left;
+  }
+  .exploreOmniHeatLink {
+    background: image-url('m-omni_heat_link_arrow.png') no-repeat top right;
+    color: #E31D3B;
+    font-weight: bold;
+    padding: 0 25px 0 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: left;
+    margin: 62px 0 0 0;
+  }
+}
+
+.omni-heat-dots {
+  position: absolute;
+  margin-left: -206px;
+  z-index: 100;
+}
+
+.omni-yeti {
+  position: absolute;
+  margin-top: -73px;
+  margin-left: -140px !important;
+  z-index: 800;
+}
+

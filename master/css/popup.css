@@ -1,0 +1,76 @@
+.contest-rules header {
+  position: absolute; }
+  .contest-rules header #soc-nav {
+    float: right !important; }
+.contest-rules #mainContainer {
+  text-align: left !important;
+  padding-top: 207px; }
+  .contest-rules #mainContainer p {
+    color: #0088ce !important; }
+  .contest-rules #mainContainer h3 {
+    color: #0088ce !important;
+    font-size: 16px;
+    line-height: 26px; }
+  .contest-rules #mainContainer section {
+    width: 940px; }
+  .contest-rules #mainContainer .popup-hero {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: -4px;
+    z-index: 8000;
+    padding: 0 84px; }
+  .contest-rules #mainContainer .popup-banner {
+    position: absolute;
+    top: 66px;
+    z-index: 1000; }
+  .contest-rules #mainContainer .sectionWrapper.wrapperOmniHeat {
+    background-color: black;
+    margin-top: 74px; }
+    .contest-rules #mainContainer .sectionWrapper.wrapperOmniHeat p {
+      color: #fff !important; }
+  .contest-rules #mainContainer .sectionWrapper.wrapperProductCallout {
+    text-align: center; }
+    .contest-rules #mainContainer .sectionWrapper.wrapperProductCallout p {
+      color: #fff !important; }
+  .contest-rules #mainContainer #soc-nav {
+    height: 67px;
+    float: left;
+    padding-left: 7px;
+    overflow: hidden;
+    width: 108px;
+    padding-top: 3px;
+    position: absolute;
+    margin-left: 852px;
+    margin-top: -228px;
+    z-index: 10000; }
+    .contest-rules #mainContainer #soc-nav h6 {
+      color: #66ccff;
+      font-size: 11px;
+      margin: 0; }
+    .contest-rules #mainContainer #soc-nav ul {
+      margin: 0;
+      padding: 0; }
+      .contest-rules #mainContainer #soc-nav ul li {
+        display: inline-block;
+        text-indent: -9999px;
+        padding-right: 15px;
+        float: left; }
+        .contest-rules #mainContainer #soc-nav ul li a {
+          line-height: 70px;
+          display: block; }
+      .contest-rules #mainContainer #soc-nav ul #fb-follow {
+        width: 29px;
+        height: 29px;
+        background: url(../img/fb-lg-2.png) no-repeat; }
+      .contest-rules #mainContainer #soc-nav ul #tw-follow {
+        width: 29px;
+        height: 30px;
+        background: url(../img/tw-lg.png) no-repeat; }
+  .contest-rules #mainContainer ol.rules {
+    list-style-type: decimal;
+    color: #0088ce; }
+  .contest-rules #mainContainer footer p {
+    color: #666 !important;
+    font-size: 12px;
+    line-height: 22px; }

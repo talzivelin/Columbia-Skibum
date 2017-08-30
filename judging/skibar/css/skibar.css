@@ -1,0 +1,72 @@
+html body {
+  background: #333; }
+  html body #mainContainer {
+    color: #f00;
+    padding-top: 300px; }
+    html body #mainContainer #skibar {
+      width: 960px;
+      margin: 0 auto; }
+      html body #mainContainer #skibar #progress-bar {
+        background: #eaeaea;
+        width: 960px;
+        height: 36px; }
+        html body #mainContainer #skibar #progress-bar #complete {
+          height: 36px;
+          background: #0088ce;
+          float: left; }
+        html body #mainContainer #skibar #progress-bar #label-status {
+          position: absolute;
+          color: #00ffff;
+          font-size: 16px;
+          font-family: Arial, sans-serif;
+          line-height: 36px;
+          text-transform: uppercase;
+          margin-left: 156px;
+          width: 300px;
+          height: 36px; }
+        html body #mainContainer #skibar #progress-bar #label-eval {
+          position: absolute;
+          color: #656565;
+          font-size: 12px;
+          font-family: Arial, sans-serif;
+          line-height: 36px;
+          text-transform: uppercase;
+          margin-left: 762px;
+          font-weight: bold; }
+        html body #mainContainer #skibar #progress-bar .swing-ski {
+          position: absolute;
+          width: 54px;
+          height: 75px;
+          background: url(../img/ski-sprite.png) no-repeat;
+          margin-top: 15px; }
+        html body #mainContainer #skibar #progress-bar .ski-balloon {
+          display: block;
+          opacity: 0;
+          position: absolute;
+          width: 81px;
+          height: 46px;
+          background: url(../img/balloon-sprite.png) no-repeat;
+          margin-top: -24px;
+          font-family: Arial, sans-serif;
+          font-size: 13px;
+          color: #eaeaea;
+          line-height: 18px;
+          padding-top: 6px; }
+        html body #mainContainer #skibar #progress-bar .ski-balloon#balloon-start {
+          background-position: 0 0;
+          margin-left: -25px; }
+        html body #mainContainer #skibar #progress-bar .ski-balloon#balloon-deadline {
+          background-position: 0 -52px;
+          margin-left: 640px; }
+        html body #mainContainer #skibar #progress-bar .ski-balloon#balloon-winner {
+          background-position: 0 -104px;
+          margin-left: 899px; }
+        html body #mainContainer #skibar #progress-bar #ski-start {
+          background-position: 0 -150px;
+          margin-left: -4px; }
+        html body #mainContainer #skibar #progress-bar #ski-deadline {
+          background-position: 0 -75px;
+          margin-left: 660px; }
+        html body #mainContainer #skibar #progress-bar #ski-winner {
+          background-position: 0 0;
+          margin-left: 920px; }

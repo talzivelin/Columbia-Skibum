@@ -1,0 +1,36 @@
+//enter footer "live the dream" section
+#mainContainer .sectionWrapper section.liveTheDream {
+  position: relative;
+  height: 216px;  
+  background: url(../img/backgrounds/dream_bg.png) 12px 12px no-repeat;
+  div {
+    position: absolute;
+    top: -10px;
+    right: -306px;
+    height: 226px;
+    overflow: hidden;
+    width: 650px;
+    img {
+      margin-top: 0;
+      width: 620px;
+    }
+  }
+  img {
+    &.heading {
+      margin: 45px 0 25px 105px;
+      float: left;
+    }
+  }
+  .button {
+    padding: 13px 0 0 7px;
+    margin-left: 105px;
+    width: 170px;
+    height: 44px;
+    font-size: 14px;
+    clear: left;
+    b {
+      font-size: 16px;
+      padding-left: 2px;
+    }
+  }
+}

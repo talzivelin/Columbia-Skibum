@@ -1,0 +1,390 @@
+@import 'flexslider.css';
+@import 'jquery.mCustomScrollbar.css';
+
+$playerHeight: 360px;
+$playerWidth: 940px;
+$thumbnailHeight: 170px;
+$thumbnailWidth: 300px;
+$videoWidth: 511px;
+$videoHeight: 311px;
+
+$playerOrange: #e46218;
+
+@mixin fadeTransition {
+	transition: opacity .25s ease-in-out;
+	moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.myHidden { 
+	opacity: 0 !important;
+	@include fadeTransition;
+}
+
+
+.wrapperSinglevideo {
+   .gallery { 
+      clear:left;
+   	height: auto;
+      margin:30px 0;
+   	.player { 
+         position:relative;
+   		//top: $thumbnailHeight + 12;
+   		margin: 12px 0 30px 0;
+      }
+   }
+   .singlevideo {
+      padding-top:40px;
+   }
+   #fireball {
+      top:200px;
+   }
+   .voted {
+//      background-color:rgba(0,0,0,.9);
+//      position:absolute;
+//      left:-$videoWidth - 20;
+//      top:-$videoHeight + 4;
+//      width: $videoWidth;
+//      padding:100px 0;
+//      height:$videoHeight - 200;
+//      text-align:center;
+   }
+   .galleryTextWrapper {
+      position:relative;
+      z-index:999;
+      ul {
+         text-align:left;
+         width:500px;
+         margin:0 auto;
+         padding-left:60px;
+      }
+      
+      .button {
+         width:280px;
+         margin:30px auto;
+         padding:15px 30px;
+      }
+   }
+}
+.wrapperGallery {
+   padding: 0 0 20px 0;
+   .galleryTextWrapper {
+       height: 150px;
+       > div {
+         width: 100%;
+         position: absolute;
+         text-align: center;
+         h2 {
+           margin: 0px auto;
+           margin-bottom: 20px;
+           padding: 0px;
+           background: url('../img/section4/h1.png') no-repeat scroll top left;
+           width: 709px;
+           height: 67px;
+           @extend .text-replace;
+         }
+         p {
+           padding: 0px;
+           margin-bottom: 5px;
+           margin-top: 0px;
+           text-shadow: 1px 1px 1px #000;
+         }
+       }
+   }
+   .gallery { 
+   	height: $playerHeight + $thumbnailHeight + $thumbnailHeight;
+   }
+	.player { 
+		//top: $thumbnailHeight + 12;
+		margin-top: $thumbnailHeight + 12;
+   }
+   .scrollblock {
+       padding-top: 50px;
+   }
+}
+
+
+.gallery { 
+   height: 910px;
+   position: relative;
+   padding: 10px 0px 70px 0px;
+   .no-items {
+      height:250px - 75;
+      padding-top: 75px;
+      margin:20px 0;
+      background-color:rgba(0,0,0,.5);
+      position:relative;
+      z-index:9;
+   }
+	&.loading { 
+		background-image: url('../img/ajax-loader.gif');
+		background-repeat: no-repeat;
+		background-position: center center;
+		.topThumbs, .bottomThumbs, .player { 
+			display: none;
+		}
+	}
+   .votecount {
+      display:block;
+      margin:10px 0;
+      font-weight:bold;
+   }
+   .vote {
+       position: absolute;
+       bottom:18px;
+       width: 310px;
+       padding: 0;
+       line-height:1.4em;
+       line-height:1em;
+       span.voted {
+          font-size:13px;
+          cursor:default;
+          a {
+             background-color:#00b9e2;
+             @include button(#007fca, #00b9e2);
+             font-size:14px;
+             padding:5px 10px;
+             line-height:1.3em;
+             margin:10px 0 0 0;
+             width:260px;
+             float:none;
+          }
+       }
+      a, .just-voted {
+         @include button(#00b9e2,#007fca);
+         float:left;
+         min-width:270px;
+         font-size:14px;
+         padding:10px;
+         line-height: 35px;
+         white-space: nowrap;
+         img {
+            float:left;
+            margin-right:3px;
+         }
+      }
+      .just-voted {
+         cursor:default;
+      }
+   }
+	.thumbs { 
+		margin: 0px;
+		padding: 0px;
+      clear:both;
+		&.topThumbs { 
+			.arrowBottom { 
+				background-image: url('../img/gallery_arrow_up.png');
+				visibility: hidden;
+			}
+			.arrowTop { 
+				display: none;
+			}
+			.thumb, .placeholder  {
+				&.active { 
+					.arrowBottom {
+						visibility: visible !important;
+					}
+				}
+			}
+		}
+		&.bottomThumbs { 
+			margin-top: $playerHeight + 12;
+			height: $thumbnailHeight + 13;
+			.arrowTop { 
+				background-image: url('../img/gallery_arrow_down.png');
+				visibility: hidden;
+			}
+			.arrowBottom { 
+				display: none;
+			}
+			.thumb, .placeholder {
+				background-position: 0px 13px;
+				height: $thumbnailHeight + 13 !important;
+				&.active { 
+					.arrowTop { 
+						visibility: visible !important;
+					}
+				}
+			}
+		}
+      .placeholder {
+         img {
+//            width:100%;
+         }
+      }
+		li.thumb, li.placeholder { 
+			list-style: none;
+			float: left;
+			width: $thumbnailWidth;
+			height: $thumbnailHeight;
+			cursor: pointer;
+			background-size: 100%;
+			.ie8 & { 
+				background-size: $thumbnailWidth $thumbnailHeight;
+			}
+			background-repeat: no-repeat;
+			margin-right: 20px;
+			&:last-child { 
+				margin-right: 0px;
+			}
+
+			.border { 
+				//display: none;
+				opacity: 0;
+				position: absolute;
+				border: 6px solid white;
+				width: $thumbnailWidth - 12;
+				height: $thumbnailHeight - 12;
+				@include fadeTransition;
+			}
+
+			.titleWrapper { 
+				background: rgba(0, 0, 0, 0.8);
+				.ie8 & { 
+					background: rgb(0,0,0);
+				}
+				height: 40px;
+				float: none;
+				margin-top: $thumbnailHeight - 40;
+				text-align: left;
+				font-size: 11px;
+				p { 
+					margin: 0px;
+					padding: 0px;
+					line-height: 15px;
+				}
+				.author { 
+					color: #0088ce;
+					font-weight: bold;
+					padding-top: 5px;
+					margin-left: 10px;
+				}
+				.title { 
+					color: white;
+					margin-left: 10px;
+				}
+			}
+
+			.arrowTop, .arrowBottom { 
+				height: 13px;
+				overflow: hidden;
+				background-repeat: no-repeat;
+				background-position: top center;
+			}
+
+			&.active { 
+				.border { 
+					//display: block;
+				    opacity: 1;
+				    border-color: $playerOrange;
+				   transition: opacity .25s ease-in-out;
+				   -moz-transition: opacity .25s ease-in-out;
+				   -webkit-transition: opacity .25s ease-in-out;
+				}
+				&:hover { 
+					.border { 
+						border-color: $playerOrange;
+					}
+					
+				}
+			}
+			&:hover { 
+				.border { 
+					border-color: white;
+					opacity: 1;
+					transition: opacity .25s ease-in-out;
+				   -moz-transition: opacity .25s ease-in-out;
+				   -webkit-transition: opacity .25s ease-in-out;
+				}
+			}
+		}
+	}
+	
+	.player { 
+		position: absolute;
+		//top: $thumbnailHeight + 12;
+		height: $playerHeight;
+		width: $playerWidth;
+		background-color: rgba(227, 91, 21, 0.9);
+		.ie8 & { 
+			background-color: rgb(227, 91, 21);
+		}
+		z-index: 2;
+		&.loading { 
+			background-image: url('../img/ajax-loader.gif');
+			background-repeat: no-repeat;
+			background-position: 752px 170px;
+		}
+		.shareOptions { 
+			display: inline-block;
+			float: left;
+			width: 37px;
+			margin-left: 12px;
+			margin-top: 35px;
+			a { 
+				display: block;
+				margin-bottom: 18px;
+			}
+		}
+		.theVideo { 
+			display: inline-block;
+			float: left;
+			width: $videoWidth;
+			height: $videoHeight;
+			margin: 10px;
+			margin-top: 35px;
+			background-color: black;
+			opacity: 1;
+			@include fadeTransition;
+		}
+      .your-video-here {
+            background: url('../img/section4/your-image-here.png') no-repeat scroll top left;
+            width: 560px;
+            height: 316px;
+      }
+		.details { 
+			display: inline-block;
+			float: left;
+			margin-top: 35px;
+			height: 310px;
+			width: 310px;
+			padding: 0 0 0 10px;
+			text-align: left;
+			font-weight: lighter;
+			opacity: 1;
+			@include fadeTransition;
+
+			.scrollingWrapper { 
+				height: 200px;
+				.entrantTitle { 
+					font-size: 20px;
+					line-height: 22px;
+				}
+				.entrantName { 
+					font-size: 15px;
+					line-height: 22px;
+				}
+				.location { 
+					font-size: 15px;
+					line-height: 22px;
+				}
+				.description { 
+					font-size: 16px;
+					line-height: 22px;
+					margin-top: 15px;
+				}
+			}
+
+			
+		}
+		
+	}
+
+}
+
+.flexslider { 
+	background-color: transparent;
+	border: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}

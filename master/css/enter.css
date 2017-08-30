@@ -1,0 +1,53 @@
+.HowToEnter {
+  padding-bottom: 70px; }
+  .HowToEnter #howtoenter-headline {
+    display: block;
+    margin: 0 auto; }
+  .HowToEnter p {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0;
+    width: auto; }
+  .HowToEnter table#howtoenter-steps {
+    margin: 0 auto;
+    position: relative; }
+    .HowToEnter table#howtoenter-steps tr td {
+      font-size: 13px;
+      line-height: 24px;
+      color: #ccc;
+      padding: 0 13px; }
+    .HowToEnter table#howtoenter-steps tr th {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ff4af0;
+      text-transform: uppercase; }
+      .HowToEnter table#howtoenter-steps tr th img {
+        margin-bottom: 8px; }
+
+#myTimer {
+  width: 340px;
+  margin: 0 0 0 -20px; }
+  #myTimer #textbox_jbeeb_89, #myTimer #textbox_jbeeb_174, #myTimer #textbox_jbeeb_259, #myTimer #textbox_jbeeb_344 {
+    font-size: 10px !important; }
+
+#counterContainer {
+  width: 400px;
+  height: 132px;
+  background: url(../img/mountain-for-counter.png) no-repeat;
+  margin: 0 auto;
+  padding: 42px 0 0 357px;
+  margin-top: -34px; }
+  #counterContainer .calendar-add {
+    position: absolute;
+    margin-left: -388px;
+    margin-top: 30px; }
+    #counterContainer .calendar-add:link, #counterContainer .calendar-add:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: #2cb3f8;
+      font-weight: bold; }
+    #counterContainer .calendar-add:hover {
+      color: #fff; }
+    #counterContainer .calendar-add .addtocal {
+      display: none; }

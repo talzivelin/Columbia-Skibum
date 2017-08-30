@@ -1,0 +1,634 @@
+@import "compass";
+@import "defaults";
+@import "globals";
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+  padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+  @media (min-width: 961px) {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  //overflow-x: hidden;
+  min-width: $contentWidth;
+  font-weight: lighter;
+}
+
+a, object, embed {
+  outline: 0 !important;
+}
+
+.checkpoint-top {
+  height: 0px;
+  width: 200px; 
+  background-color: red;
+}
+
+header {
+  background-color: #017fc4;
+}
+
+@import "gallery";
+@import "enter";
+@import "popup";
+@import "nav";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "section5";
+@import "section6";
+@import "section7";
+@import "section8";
+@import "section9";
+
+#mainContainer {
+  width: 100%;
+  min-width: $contentWidth;
+  .sectionWrapper {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    &.wrapperSinglevideo {
+       background: url('../img/backgrounds/video-single_bg.jpg') no-repeat scroll top left;
+       background-color: #3a1104;
+    }
+    &.wrapperVideo {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    &.wrapperHero {
+      background-image: url("../img/backgrounds/hero_bg_star.jpg");
+      background-color: #000101;
+    }
+    &.wrapperWhatYouWin {
+      background-image: url("../img/section2/bg-purplemoon.jpg");
+      background-color: #120629;
+      background-size: cover;
+      overflow-x: hidden;
+      padding-bottom: 36px;
+    }
+    &.wrapperHowToEnter { 
+      background-color: #065d97;
+       @include background(linear-gradient(#0b3565 00%, #008ac9 100%));
+    }
+    &.wrapperGallery, 
+    &.wrapperSinglevideo {
+      background-image: url("../img/backgrounds/gallery_bg.jpg");
+      background-color: #3a1104;
+    }
+    &.wrapperOmniHeat {
+      background-color: black;
+    }
+    &.wrapperInstagram {
+      background-image: url("../img/backgrounds/instagram_bg.jpg");
+      background-color: #0088ce;
+    }
+	&.wrapperProductCallout {
+      background-color: #0088ce;
+    }
+	&.wrapperDream { 
+      background: url("../img/backgrounds/dream_wide_bg.jpg") top center no-repeat;
+      background-color: #000101;
+      overflow-x: hidden;
+    }
+    &.wrapperPoll { 
+      background-color: #301846;
+    }
+    &.wrapperFooter {
+      background-color: white;
+    }
+    &.sectionSpotify { 
+      background-image: url('../img/backgrounds/spotify_bg.jpg');
+      background-color: #0c0401;
+    }
+    section, footer {
+      width: $contentWidth;
+      margin: 0 auto;
+    }
+  }
+}
+
+.swinger {
+  position: absolute;
+  margin: -70px 0 0 346px;
+  width: 54px;
+  height: 63px;
+  background: url(../img/skiier.png) no-repeat;
+}
+
+.productCallout {
+  padding-bottom: 44px;
+  h1 {
+    margin-top: 0;
+    padding-top: 44px;
+  }
+}
+
+.main {
+    padding: 0 !important;
+}
+
+/* Footer */
+
+footer {
+  color: #666666;
+  font-size: 12px;
+  margin: 20px auto;
+  padding: 30px 0px 30px 0px;
+  width: 960px;
+  p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 22px;
+  }
+  div {
+    float: left;
+    text-align: center;
+    width: 40%;
+  }
+  ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      list-style-image: url("../img/footer_divline.gif");
+      margin: 0 2%;
+      text-align: center;
+      width: auto;
+      a:link, a:hover, a:visited {
+        color: #0088ce;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+    li:first-child {
+      list-style-image: none;
+    }
+  }
+  .logo {
+    width: 190px;
+  }
+  .legalese {
+    width: 490px;
+  }
+  .footer-links {
+    width: 280px;
+  }
+}
+
+/* uploader modal */
+
+.uploader	{
+  position: relative;
+	background:#030c19;
+	padding: 30px 0;
+  text-align: center;
+	width:940px;
+  margin: 0 auto;
+	
+		p	{
+			color:#fff;
+			padding:0 20px;
+			margin:30px 0 0;
+		}
+		
+		.uploaderclose	{
+      position: absolute;
+      top: 28px;
+      right: 0;
+			color:#66ff33;
+			font-size:10px;
+			margin:0 20px;
+		}
+
+    .uploaderrules_container {
+      position: relative;
+      width: 940px;
+      background: #ccc;
+      padding: 12px 0;
+      margin: 58px auto 0;
+      background: url(../img/uploadmodal_rules_bot_bg.png) top left no-repeat;
+    }
+
+    .uploaderrules_headline {
+      margin: 16px 0 5px 115px;
+    }
+
+    .uploaderrules_dude {
+      position: absolute;
+      top: -39px;
+      left: 0;
+    }
+
+    .uploaderrules {
+      background-image: none;
+      width: 899px;
+      min-height: 203px;
+      margin-left: 25px;
+      padding-bottom: 10px;
+      background-color: #007bba;
+    }
+
+    .uploaderrules_footer {
+      clear: both;
+      background: url(../img/uploadmodal_rules_bot_bg.png) top left no-repeat;
+      height: 12px;
+      display: block;
+    }
+
+}
+
+.uploaderrules	{
+	
+		ul	{
+			color: #FFFFFF;
+			font-size: 14px;
+			padding: 0;
+			margin: 0 20px 0 248px;
+      line-height: 1.8;
+			
+			li	{
+				padding:0;
+				margin:0;
+				text-align: left;
+			}
+		}
+}
+
+#fmLoginBox	{
+	background:#cc0000 !important;
+	display:block;
+}
+
+#powered {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    margin: 10px 0 !important;
+    width: 100% !important;
+}
+
+/* Modal */
+
+#basic-modal-content {display:none;}
+
+/* Overlay */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 1000000;
+}
+
+.box{
+    position:fixed;
+    top:20%;
+    left:20%;
+    right:20%;
+    background-color:#fff;
+    color:#7F7F7F;
+    padding:20px;
+    border:1px solid #00ffff;
+    z-index:1000001;
+} 
+
+.whitelink:link, .whitelink:visited	{
+	color:#fff;
+	font-size:12px;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+#mainContainer {
+  text-align: center;
+  color: #fff;
+}
+
+/* HERO STYLES (consolidated from Adam's code) */
+
+section.hero {
+  text-align: center;
+  padding-top: 64px + 70;
+  padding-bottom: 66px;
+  #video-callout {
+    display: block;
+    margin: 0 auto;
+  }
+  #hero-graphic {
+    display: block;
+    margin: 0 auto;
+    //margin-top: -42px;
+    top: -10px;
+    z-index: 100;
+    position: relative;
+  }
+  #enternow-graphic{
+    display: block;
+    left: 60px;
+    margin: 0;
+    position: relative;
+    top: 75px;
+    z-index: 101;
+  }
+  #watchvote-graphic{
+   	display: block;
+    left: 660px;
+    margin: 0;
+    position: relative;
+    top: 35px;
+    z-index: 101;
+  }
+  #hero-play-btn {
+    div {
+      display: block;
+      width: 40px;
+      height: 40px;
+      background: url(../img/video-play-green-to-red.png) 0 top no-repeat;
+      margin: 0 auto;
+      z-index: 200;
+      position: relative;
+      text-indent: -9999px;
+      margin-top: -20px;
+    }
+    &:link, &:visited {
+      text-decoration: none;
+      color: $brightGreen;
+      font-size: 10px;
+      line-height: 60px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top: 14px;
+    }
+    &:hover {
+      color: #ff0000;
+      div {
+        background-position: bottom;
+      }
+    }
+  }
+  #hero-cta {
+    position: relative;
+    margin-top: -110px;
+    z-index: 200;
+    h2 {
+      font-size: 22px;
+      color: $midBlue;
+      text-transform: uppercase;
+      sup {
+        font-size: 10px;
+        top: -1em;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+  #soc-panel {
+    width: 80px;
+    text-align: left;
+    position: absolute;
+    margin-left: 856px;
+    h6 {
+      font-size: 11px;
+      color: $midBlue;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    ul {
+      margin: 0;
+      padding: 0 0 0 4px;
+      list-style: none;
+      a {
+        display: block;
+        text-indent: -9999px;
+        margin-bottom: 10px;
+      }
+    }
+    #fb-share a {
+      width: 24px;
+      height: 24px;
+      background: url(../img/fb-sm.png) no-repeat;
+    }
+    #tw-share a {
+      width: 24px;
+      height: 20px;
+      background: url(../img/tw-sm.png) no-repeat;
+    }
+    #pin-share a {
+      width: 26px;
+      height: 26px;
+      background: url(../img/pin-sm.png) no-repeat;
+    }
+    #tumblr-share a {
+      width: 27px;
+      height: 27px;
+      background: url(../img/tmblr-sm.png) no-repeat;
+    }
+  }
+}
+
+a.cta-text {
+  color: $lightCyan;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 20px;
+  display: inline-block;
+  background: url(../img/drop-arrow.png) left top no-repeat;
+  padding-left: 28px;
+ 
+  &:hover {
+    color: #fff;
+    background-position: left bottom;
+  }
+}
+
+/* HOW TO ENTER STYLES (consolidated from Adam's code) */
+
+.HowToEnter {
+  padding-bottom: 40px;
+  #howtoenter-headline {
+    display: block;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0;
+    width: auto;
+  }
+  table#howtoenter-steps {
+    margin: 0 auto;
+    position: relative;
+    tr {
+      td {
+        font-size: 13px;
+        line-height: 24px;
+        color: #ccc;
+        padding: 0 13px;
+      }
+      th {
+        font-size: 22px;
+        font-weight: bold;
+        color: $magenta;
+        text-transform: uppercase;
+        img {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+#myTimer {
+  width: 340px;
+  margin: 0 0 0 -20px;
+  #textbox_jbeeb_89, #textbox_jbeeb_174, #textbox_jbeeb_259, #textbox_jbeeb_344 {
+    font-size: 10px !important;
+  }
+  #ie8Countdown {
+    width: 340px;
+    height: 60px;
+  }
+}
+
+#counterContainer {
+  width: 400px;
+  height: 132px;
+  background: url(../img/mountain-for-counter.png) no-repeat;
+  margin: 0 auto;
+  padding: 42px 0 0 357px;
+  margin-top: -34px;
+  display: block;
+  .calendar-add {
+    position: relative;
+    margin-left: -188px;
+    margin-top: 30px;
+    float: left;
+    &:link, &:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: $midBlue;
+      font-weight: bold;
+    }
+    &:hover {
+      color: #fff;
+    }
+    .addtocal {
+      display: none;
+    }
+  }
+}
+
+.lt-ie9 #counterContainer {
+  display: none !important;
+}
+
+/* Firefox-specific styling */
+@-moz-document url-prefix() {
+
+  a.button.launch_uploader { 
+    padding: 24px 0 22px;
+  }
+  
+  a.button.pink.twoline {
+    padding: 22px 0 16px;
+  }
+
+  .HowToEnter .button {
+    min-height: 0;
+  }
+
+  #mainContainer .sectionWrapper section.liveTheDream .button {
+    padding-top: 12px;
+    height: 32px;
+  }
+
+}

@@ -1,0 +1,1175 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+/* line 15, ../sass/mobile.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 19, ../sass/mobile.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 24, ../sass/mobile.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 29, ../sass/mobile.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 34, ../sass/mobile.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 43, ../sass/mobile.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 47, ../sass/mobile.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 53, ../sass/mobile.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 57, ../sass/mobile.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* line 64, ../sass/mobile.scss */
+a {
+  color: #0FF;
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+/* line 72, ../sass/mobile.scss */
+body {
+  font: 16px/26px Arial, Helvetica, Helvetica Neue;
+}
+
+/* line 76, ../sass/mobile.scss */
+.wrapper {
+  margin: 0%;
+  min-width: 320px;
+  background: #000;
+}
+
+/* line 82, ../sass/mobile.scss */
+.wrapperrules {
+  margin: 0%;
+  min-width: 320px;
+  background: #fff;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+/* line 92, ../sass/mobile.scss */
+.header-container {
+  border-bottom: 20px solid #e44d26;
+}
+
+/* line 97, ../sass/mobile.scss */
+.footer-container,
+.main aside {
+  border-top: 20px solid #e44d26;
+}
+
+/* line 103, ../sass/mobile.scss */
+.header-container,
+.footer-container,
+.main aside {
+  background: #f16529;
+}
+
+/* line 107, ../sass/mobile.scss */
+.title {
+  color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+/* line 115, ../sass/mobile.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 120, ../sass/mobile.scss */
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: #e44d26;
+}
+
+/* line 131, ../sass/mobile.scss */
+nav a:hover,
+nav a:visited {
+  color: white;
+}
+
+/* line 135, ../sass/mobile.scss */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+/* line 143, ../sass/mobile.scss */
+.main {
+  padding: 30px 0;
+}
+
+/* line 147, ../sass/mobile.scss */
+.main article h1 {
+  font-size: 2em;
+}
+
+/* line 151, ../sass/mobile.scss */
+.main aside {
+  color: white;
+  padding: 0px 5% 10px;
+}
+
+/* line 156, ../sass/mobile.scss */
+.footer-container footer {
+  color: white;
+  padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+/* line 165, ../sass/mobile.scss */
+.ie7 .title {
+  padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 202, ../sass/mobile.scss */
+a.button {
+  color: #fff;
+  line-height: 1.5em;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 0px #f6c34c inset, 0px 2px #f9d37c inset, 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 0px #f6c34c inset, 0px 2px #f9d37c inset, 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 0px #f6c34c inset, 0px 2px #f9d37c inset, 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  display: block;
+  width: auto;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  height: auto;
+  cursor: pointer;
+  background-color: #f09c17;
+  background: -webkit-linear-gradient(#f4b31b 0%, #ea7311 100%);
+  background: -moz-linear-gradient(#f4b31b 0%, #ea7311 100%);
+  background: -o-linear-gradient(#f4b31b 0%, #ea7311 100%);
+  background: linear-gradient(#f4b31b 0%, #ea7311 100%);
+}
+/* line 190, ../sass/mobile.scss */
+a.button.twoline {
+  line-height: .9em;
+}
+/* line 193, ../sass/mobile.scss */
+a.button span.additional {
+  font-size: .7em;
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 0px;
+}
+
+/* line 205, ../sass/mobile.scss */
+a.pink {
+  color: #fff;
+  line-height: 1.5em;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 0px #ee88ea inset, 0px 2px #f5b4f2 inset, 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 0px #ee88ea inset, 0px 2px #f5b4f2 inset, 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 0px #ee88ea inset, 0px 2px #f5b4f2 inset, 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  display: block;
+  width: auto;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  height: auto;
+  cursor: pointer;
+  background-color: #f09c17;
+  background: -webkit-linear-gradient(#e85be2 0%, #d43ac9 100%);
+  background: -moz-linear-gradient(#e85be2 0%, #d43ac9 100%);
+  background: -o-linear-gradient(#e85be2 0%, #d43ac9 100%);
+  background: linear-gradient(#e85be2 0%, #d43ac9 100%);
+  color: #3e1c50;
+}
+/* line 190, ../sass/mobile.scss */
+a.pink.twoline {
+  line-height: .9em;
+}
+/* line 193, ../sass/mobile.scss */
+a.pink span.additional {
+  font-size: .7em;
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 0px;
+}
+
+/* line 212, ../sass/mobile.scss */
+body {
+  min-width: 100%;
+  font-weight: lighter;
+}
+@media (min-width: 961px) {
+  /* line 212, ../sass/mobile.scss */
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+/* line 222, ../sass/mobile.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 231, ../sass/mobile.scss */
+section.hero {
+  clear: both;
+  text-align: center;
+  padding: 0;
+}
+/* line 235, ../sass/mobile.scss */
+section.hero #video-callout {
+  margin: 0 auto;
+}
+/* line 238, ../sass/mobile.scss */
+section.hero #hero-graphic {
+  display: block;
+  margin: 0 auto;
+  z-index: 100;
+  position: relative;
+}
+/* line 245, ../sass/mobile.scss */
+section.hero #hero-play-btn div {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url('/img/mobile/m-video-play-green.png?1381184452') 0 top no-repeat;
+  margin: 0 auto;
+  z-index: 200;
+  position: relative;
+  text-indent: -9999px;
+  margin-top: -20px;
+}
+/* line 256, ../sass/mobile.scss */
+section.hero #hero-play-btn:link, section.hero #hero-play-btn:visited {
+  text-decoration: none;
+  color: #5af93b;
+  font-size: 10px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 14px;
+}
+/* line 265, ../sass/mobile.scss */
+section.hero #hero-play-btn:hover {
+  color: #fff;
+}
+/* line 267, ../sass/mobile.scss */
+section.hero #hero-play-btn:hover div {
+  background-position: bottom;
+}
+/* line 272, ../sass/mobile.scss */
+section.hero #hero-cta {
+  position: relative;
+  margin-top: -110px;
+  z-index: 200;
+}
+/* line 276, ../sass/mobile.scss */
+section.hero #hero-cta h2 {
+  font-size: 22px;
+  color: #2cb3f8;
+  text-transform: uppercase;
+}
+/* line 280, ../sass/mobile.scss */
+section.hero #hero-cta h2 sup {
+  font-size: 10px;
+  top: -1em;
+}
+/* line 285, ../sass/mobile.scss */
+section.hero #hero-cta p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* line 292, ../sass/mobile.scss */
+.cta-text {
+  color: cyan;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 20px;
+  display: inline-block;
+  background: url('/img/drop-arrow.png?1381184450') left top no-repeat;
+  padding-left: 28px;
+}
+/* line 302, ../sass/mobile.scss */
+.cta-text:hover {
+  color: #fff;
+  background-position: left bottom;
+}
+
+/* line 312, ../sass/mobile.scss */
+header {
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: url('/img/mobile/m-blue-90.png?1381184452') repeat;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+/* line 323, ../sass/mobile.scss */
+header #headerWrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 327, ../sass/mobile.scss */
+header #headerWrap h1 {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  margin: 0;
+  z-index: 9999;
+}
+/* line 334, ../sass/mobile.scss */
+header #headerWrap h1 a {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+/* line 340, ../sass/mobile.scss */
+header #headerWrap h2 {
+  display: block;
+  float: right;
+  margin-right: 20px;
+  text-align: right;
+}
+/* line 345, ../sass/mobile.scss */
+header #headerWrap h2 a {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+/* line 351, ../sass/mobile.scss */
+header #headerWrap img {
+  max-width: 50%;
+  height: auto;
+}
+/* line 355, ../sass/mobile.scss */
+header #headerWrap nav {
+  display: block;
+  float: left;
+  height: 70px;
+  margin: 0;
+  width: auto;
+  margin-left: 36px;
+}
+/* line 362, ../sass/mobile.scss */
+header #headerWrap nav li {
+  display: inline-block;
+  height: 70px;
+  line-height: 70px;
+  float: none;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #10459d;
+}
+/* line 373, ../sass/mobile.scss */
+header #headerWrap nav li a {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  display: block;
+  line-height: 70px;
+  height: 70px;
+  float: none;
+  background: transparent;
+}
+/* line 383, ../sass/mobile.scss */
+header #headerWrap nav li a.current {
+  text-decoration: none;
+  color: #10459d;
+  cursor: default;
+}
+/* line 390, ../sass/mobile.scss */
+header #headerWrap #soc-nav {
+  height: 67px;
+  float: left;
+  padding-left: 7px;
+  overflow: hidden;
+  width: 108px;
+  padding-top: 3px;
+}
+/* line 397, ../sass/mobile.scss */
+header #headerWrap #soc-nav h6 {
+  color: #66ccff;
+  font-size: 11px;
+  margin: 0;
+}
+/* line 402, ../sass/mobile.scss */
+header #headerWrap #soc-nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 405, ../sass/mobile.scss */
+header #headerWrap #soc-nav ul li {
+  display: inline-block;
+  text-indent: -9999px;
+  padding-right: 15px;
+}
+/* line 409, ../sass/mobile.scss */
+header #headerWrap #soc-nav ul li a {
+  line-height: 70px;
+  display: block;
+}
+/* line 414, ../sass/mobile.scss */
+header #headerWrap #soc-nav ul #fb-follow {
+  width: 29px;
+  height: 29px;
+  background: url('/img/fb-lg.png?1381884171') no-repeat;
+}
+/* line 419, ../sass/mobile.scss */
+header #headerWrap #soc-nav ul #tw-follow {
+  width: 35px;
+  height: 28px;
+  background: url('/img/tw-lg.png?1381884172') no-repeat;
+}
+
+/* line 429, ../sass/mobile.scss */
+#mainContainer {
+  color: #fff;
+}
+
+/* line 434, ../sass/mobile.scss */
+#mainContainer .sectionWrapper {
+  width: 100%;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+/* line 439, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperHero {
+  background-color: #000101;
+  float: left;
+  width: 100%;
+}
+/* line 444, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperRules {
+  padding: 20px 0 15px;
+  width: 100%;
+}
+/* line 447, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperRules table {
+  border: 1px solid #0088ce;
+  margin: 30px auto;
+}
+/* line 450, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperRules table th {
+  text-align: center;
+  padding: 10px;
+}
+/* line 454, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperRules table td {
+  padding: 2px 13px;
+  width: 70px;
+  border: 1px solid #0088ce;
+  line-height: 24px;
+}
+/* line 461, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperRules table.themes td + td {
+  width: 150px;
+}
+/* line 463, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperRules table.themes td + td + td {
+  width: 114px;
+}
+/* line 469, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperRules table.notifications td {
+  width: 60px;
+}
+/* line 472, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperRules table.notifications td + td {
+  width: 150px;
+  padding-left: 50px;
+  padding-right: 0;
+}
+/* line 480, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrappersubmitVideos {
+  background-color: #0088ce;
+  padding: 20px 0 15px;
+  width: 100%;
+  float: left;
+}
+/* line 486, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperOmniHeat {
+  background-color: black;
+  float: left;
+  padding: 20px 0 15px;
+  width: 100%;
+}
+/* line 492, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperFooter {
+  background-color: white;
+  float: left;
+  padding: 20px 0 15px;
+  width: 100%;
+}
+/* line 498, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperwatchAndVote {
+  background-color: #49364f;
+  padding: 20px 0 15px;
+  float: left;
+}
+/* line 503, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperInstagram {
+  float: left;
+  padding: 20px 0 15px;
+  width: 100%;
+  background: black url('/img/mobile/m-instagram_bottom.jpg?1381949749') left bottom repeat-x;
+}
+/* line 508, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperInstagram .instagramRules {
+  color: #fff;
+  display: block;
+}
+/* line 513, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section, #mainContainer .sectionWrapper footer {
+  width: 96%;
+  margin: 0 auto;
+}
+
+/* line 520, ../sass/mobile.scss */
+.rules {
+  padding-top: 70px;
+}
+/* line 522, ../sass/mobile.scss */
+.rules a.close {
+  color: #000;
+}
+/* line 524, ../sass/mobile.scss */
+.rules a.close:hover {
+  text-decoration: none;
+}
+/* line 528, ../sass/mobile.scss */
+.rules h3 {
+  color: #0088ce;
+}
+/* line 532, ../sass/mobile.scss */
+.rules h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+  color: #0088ce;
+}
+/* line 537, ../sass/mobile.scss */
+.rules p {
+  color: #0088ce !important;
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+/* line 543, ../sass/mobile.scss */
+.rules ol {
+  color: #0088CE !important;
+  padding: 0;
+  margin: 0 0 0 24px;
+}
+
+/* line 553, ../sass/mobile.scss */
+.wrapperwatchAndVote .gallery {
+  margin: 20px 0;
+}
+/* line 555, ../sass/mobile.scss */
+.wrapperwatchAndVote .gallery .slides {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 562, ../sass/mobile.scss */
+.wrapperwatchAndVote .gallery .slides li {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+/* line 569, ../sass/mobile.scss */
+.wrapperwatchAndVote .gallery .slides li a {
+  color: #fff;
+  display: block;
+}
+/* line 572, ../sass/mobile.scss */
+.wrapperwatchAndVote .gallery .slides li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 182px;
+  font-size: 24px;
+  font-weight: 100;
+  font-family: arial;
+  content: 'PLAY';
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-align: center;
+}
+/* line 589, ../sass/mobile.scss */
+.wrapperwatchAndVote .gallery .thumb {
+  width: 300px;
+  height: 182px;
+}
+/* line 594, ../sass/mobile.scss */
+.wrapperwatchAndVote .vote, .wrapperwatchAndVote .voted, .wrapperwatchAndVote .flex-next {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  line-height: 1.5em;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 0px #009ffd inset, 0px 2px #31b3ff inset, 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 0px #009ffd inset, 0px 2px #31b3ff inset, 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 0px #009ffd inset, 0px 2px #31b3ff inset, 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  display: block;
+  width: auto;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  height: auto;
+  cursor: pointer;
+  background-color: #f09c17;
+  background: -webkit-linear-gradient(#007fca 0%, #00b9e2 100%);
+  background: -moz-linear-gradient(#007fca 0%, #00b9e2 100%);
+  background: -o-linear-gradient(#007fca 0%, #00b9e2 100%);
+  background: linear-gradient(#007fca 0%, #00b9e2 100%);
+  font-size: 14px;
+  height: 60px;
+  padding: 13px;
+  line-height: 34px;
+}
+/* line 190, ../sass/mobile.scss */
+.wrapperwatchAndVote .vote.twoline, .wrapperwatchAndVote .voted.twoline, .wrapperwatchAndVote .flex-next.twoline {
+  line-height: .9em;
+}
+/* line 193, ../sass/mobile.scss */
+.wrapperwatchAndVote .vote span.additional, .wrapperwatchAndVote .voted span.additional, .wrapperwatchAndVote .flex-next span.additional {
+  font-size: .7em;
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 0px;
+}
+/* line 602, ../sass/mobile.scss */
+.wrapperwatchAndVote .vote {
+  width: 68%;
+  line-height: 1.3em;
+  float: left;
+}
+/* line 606, ../sass/mobile.scss */
+.wrapperwatchAndVote .vote img {
+  width: auto;
+  height: auto;
+  float: left;
+  margin-right: 3px;
+}
+/* line 613, ../sass/mobile.scss */
+.wrapperwatchAndVote .voted {
+  width: 68%;
+  text-align: center;
+}
+/* line 618, ../sass/mobile.scss */
+.wrapperwatchAndVote .flex-direction-nav {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  display: block;
+  margin: 0;
+  width: 30%;
+  padding: 0;
+  float: right;
+}
+/* line 626, ../sass/mobile.scss */
+.wrapperwatchAndVote .flex-direction-nav .flex-prev {
+  display: none;
+}
+/* line 629, ../sass/mobile.scss */
+.wrapperwatchAndVote .flex-direction-nav .flex-next {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+/* Submit Video	*/
+/* line 641, ../sass/mobile.scss */
+.submitVideos .viewFullSiteLink {
+  background: url('/img/mobile/m-submite_video_link_arrow.png?1381184452') no-repeat top right;
+  text-transform: uppercase;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 30px 0 0;
+}
+/* line 649, ../sass/mobile.scss */
+.submitVideos p {
+  margin: 15px 0;
+}
+
+/* mobileShare */
+/* line 657, ../sass/mobile.scss */
+.mobileShare h3 {
+  font-size: 16px;
+  padding: 0;
+  margin: 35px 0 10px;
+}
+/* line 662, ../sass/mobile.scss */
+.mobileShare ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 667, ../sass/mobile.scss */
+.mobileShare ul li {
+  float: left;
+  width: 48%;
+  margin: 0 0 10px;
+  padding: 0;
+}
+/* line 673, ../sass/mobile.scss */
+.mobileShare ul li.leftcol {
+  padding: 0 2.5% 0 0;
+}
+
+/* Omni Heat */
+/* line 681, ../sass/mobile.scss */
+.omniHeat {
+  background: #000;
+  color: #FFF;
+}
+/* line 686, ../sass/mobile.scss */
+.omniHeat div.omniHeatContent img {
+  float: left;
+  width: 97px;
+  margin: 0 10px 0 0;
+}
+/* line 691, ../sass/mobile.scss */
+.omniHeat div.omniHeatContent p {
+  float: left;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  margin: 25px 0 15px;
+}
+/* line 700, ../sass/mobile.scss */
+.omniHeat .exploreOmniHeatLink {
+  background: url('/img/mobile/m-omni_heat_link_arrow.png?1381184452') no-repeat top right;
+  text-transform: uppercase;
+  color: #e31d3b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 30px 0 0;
+}
+/* line 708, ../sass/mobile.scss */
+.omniHeat .omniheatLeft {
+  float: left;
+  width: 50%;
+  padding: 0 23% 20px 0;
+}
+/* line 713, ../sass/mobile.scss */
+.omniHeat .omniheatRight {
+  float: right;
+  width: 27%;
+  padding: 0 0 20px 0;
+}
+
+/* Footer */
+/* line 722, ../sass/mobile.scss */
+footer {
+  color: #666666;
+  font-size: 12px;
+  margin: 20px auto;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 729, ../sass/mobile.scss */
+footer p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 16px;
+}
+/* line 735, ../sass/mobile.scss */
+footer div {
+  float: left;
+  width: 90%;
+  padding: 10px 5%;
+  text-align: center;
+}
+/* line 740, ../sass/mobile.scss */
+footer div a:link, footer div a:hover, footer div a:visited {
+  color: #0088ce;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 745, ../sass/mobile.scss */
+footer div img.divline {
+  width: 24px;
+  height: auto;
+}
+/* line 750, ../sass/mobile.scss */
+footer .logo {
+  padding: 10px 30%;
+  width: 40%;
+}
+
+/* Instagram */
+/* line 758, ../sass/mobile.scss */
+#mainContainer .sectionWrapper h1 {
+  margin: 0 0 10px 0;
+}
+/* line 762, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperInstagram {
+  position: relative;
+}
+/* line 764, ../sass/mobile.scss */
+#mainContainer .sectionWrapper.wrapperInstagram:before {
+  content: '';
+  background: transparent url('/img/mobile/m-instagram_top.jpg?1381949749') left top repeat-x;
+  display: block;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 776, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram {
+  padding-top: 20px;
+  font-size: 13px;
+}
+/* line 780, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram p {
+  margin: 15px 0 30px;
+}
+/* line 784, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram .imgbox {
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+/* line 789, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram .imgbox a.seeall {
+  text-transform: uppercase;
+  color: #3fed28;
+  padding-right: 25px;
+  background: url('/img/mobile/m-omni_heat_link_arrow.png?1381184452') 143px -46px no-repeat;
+}
+/* line 795, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram .imgbox a.company {
+  position: absolute;
+  right: 14px;
+  bottom: 30px;
+}
+/* line 801, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram .imgbox ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin: 0 0 10px;
+  float: left;
+}
+/* line 807, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram .imgbox ul li {
+  float: left;
+  margin: 0;
+  padding: 0 2% 0 0;
+  width: 48%;
+}
+/* line 816, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram .rcol {
+  width: 100%;
+  float: left;
+  padding: 0 0 20px;
+}
+/* line 821, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram .rcol h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+/* line 827, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram .rcol h2 {
+  font-size: 25px;
+  font-style: italic;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+/* line 835, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram .rcol p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+/* line 840, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram .rcol .bluecallout {
+  color: #0088ce;
+}
+/* line 847, ../sass/mobile.scss */
+#mainContainer .sectionWrapper section.instagram .seeEntriesLink {
+  background: url('/img/mobile/m-instagram_link_arrow.png?1381877855') no-repeat top right;
+  text-transform: uppercase;
+  color: #3fed28;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 30px 0 0;
+  font-size: 16px;
+}
+
+/* line 859, ../sass/mobile.scss */
+.vote {
+  float: left;
+  width: 63%;
+  padding: 0 2% 0 0;
+}
+
+/* line 865, ../sass/mobile.scss */
+.next {
+  float: left;
+  width: 33%;
+  padding: 0;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* line 881, ../sass/mobile.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+/* line 888, ../sass/mobile.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/* line 895, ../sass/mobile.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 900, ../sass/mobile.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 912, ../sass/mobile.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 921, ../sass/mobile.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 926, ../sass/mobile.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 931, ../sass/mobile.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 935, ../sass/mobile.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  /* line 944, ../sass/mobile.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 952, ../sass/mobile.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 955, ../sass/mobile.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 958, ../sass/mobile.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 966, ../sass/mobile.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 970, ../sass/mobile.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 974, ../sass/mobile.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 979, ../sass/mobile.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 982, ../sass/mobile.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 991, ../sass/mobile.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 996, ../sass/mobile.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 1001, ../sass/mobile.scss */
+p.disclaimer {
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}

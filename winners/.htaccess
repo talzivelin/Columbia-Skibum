@@ -1,0 +1,12 @@
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on 
+    Options -Multiviews
+    RewriteBase /
+    RewriteRule		^video/(.+?)/?$	video.php?videoid=$1 [NC,L]
+    RewriteRule		^videos/(.+?)/?$	index.php?videoid=$1 [NC,L]
+</IfModule>
+
+Redirect 301 /contest-rules.html /contest-rules.php

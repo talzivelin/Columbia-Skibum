@@ -1,0 +1,113 @@
+/* line 4, ../sass/popup.scss */
+.contest-rules header {
+  position: absolute;
+}
+/* line 5, ../sass/popup.scss */
+.contest-rules header #soc-nav {
+  float: right !important;
+}
+/* line 9, ../sass/popup.scss */
+.contest-rules #mainContainer {
+  text-align: left !important;
+  padding-top: 207px;
+}
+/* line 14, ../sass/popup.scss */
+.contest-rules #mainContainer p {
+  color: #0088ce !important;
+}
+/* line 18, ../sass/popup.scss */
+.contest-rules #mainContainer h3 {
+  color: #0088ce !important;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* line 24, ../sass/popup.scss */
+.contest-rules #mainContainer section {
+  width: 940px;
+}
+/* line 26, ../sass/popup.scss */
+.contest-rules #mainContainer .popup-hero {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: -4px;
+  z-index: 8000;
+  padding: 0 84px;
+}
+/* line 35, ../sass/popup.scss */
+.contest-rules #mainContainer .popup-banner {
+  position: absolute;
+  top: 66px;
+  z-index: 1000;
+}
+/* line 41, ../sass/popup.scss */
+.contest-rules #mainContainer .sectionWrapper.wrapperOmniHeat {
+  background-color: black;
+  margin-top: 74px;
+}
+/* line 45, ../sass/popup.scss */
+.contest-rules #mainContainer .sectionWrapper.wrapperOmniHeat p {
+  color: #fff !important;
+}
+/* line 50, ../sass/popup.scss */
+.contest-rules #mainContainer .sectionWrapper.wrapperProductCallout {
+  text-align: center;
+}
+/* line 53, ../sass/popup.scss */
+.contest-rules #mainContainer .sectionWrapper.wrapperProductCallout p {
+  color: #fff !important;
+}
+/* line 58, ../sass/popup.scss */
+.contest-rules #mainContainer #soc-nav {
+  height: 67px;
+  float: left;
+  padding-left: 7px;
+  overflow: hidden;
+  width: 108px;
+  padding-top: 3px;
+  position: absolute;
+  margin-left: 852px;
+  margin-top: -228px;
+  z-index: 10000;
+}
+/* line 71, ../sass/popup.scss */
+.contest-rules #mainContainer #soc-nav h6 {
+  color: #66ccff;
+  font-size: 11px;
+  margin: 0;
+}
+/* line 77, ../sass/popup.scss */
+.contest-rules #mainContainer #soc-nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 82, ../sass/popup.scss */
+.contest-rules #mainContainer #soc-nav ul li {
+  display: inline-block;
+  text-indent: -9999px;
+  padding-right: 15px;
+  float: left;
+}
+/* line 88, ../sass/popup.scss */
+.contest-rules #mainContainer #soc-nav ul li a {
+  line-height: 70px;
+  display: block;
+}
+/* line 95, ../sass/popup.scss */
+.contest-rules #mainContainer #soc-nav ul #fb-follow {
+  width: 29px;
+  height: 29px;
+  background: url(../img/fb-lg-2.png) no-repeat;
+}
+/* line 101, ../sass/popup.scss */
+.contest-rules #mainContainer #soc-nav ul #tw-follow {
+  width: 29px;
+  height: 30px;
+  background: url(../img/tw-lg.png) no-repeat;
+}
+/* line 110, ../sass/popup.scss */
+.contest-rules #mainContainer footer p {
+  color: #666 !important;
+  font-size: 12px;
+  line-height: 22px;
+}

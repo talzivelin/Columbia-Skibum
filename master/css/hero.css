@@ -1,0 +1,98 @@
+section.hero {
+  text-align: center;
+  padding-top: 134px;
+  padding-bottom: 66px; }
+  section.hero #video-callout {
+    display: block;
+    margin: 0 auto; }
+  section.hero #hero-graphic {
+    display: block;
+    margin: 0 auto;
+    top: 42px;
+    z-index: 100;
+    position: relative; }
+  section.hero #hero-play-btn div {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/video-play-green.png) 0 top no-repeat;
+    margin: 0 auto;
+    z-index: 200;
+    position: relative;
+    text-indent: -9999px;
+    margin-top: -20px; }
+  section.hero #hero-play-btn:link, section.hero #hero-play-btn:visited {
+    text-decoration: none;
+    color: #5af93b;
+    font-size: 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 14px; }
+  section.hero #hero-play-btn:hover {
+    color: #fff; }
+    section.hero #hero-play-btn:hover div {
+      background-position: bottom; }
+  section.hero #hero-cta {
+    position: relative;
+    margin-top: -110px;
+    z-index: 200; }
+    section.hero #hero-cta h2 {
+      font-size: 22px;
+      color: #2cb3f8;
+      text-transform: uppercase; }
+      section.hero #hero-cta h2 sup {
+        font-size: 10px;
+        top: -1em; }
+    section.hero #hero-cta p {
+      font-size: 16px;
+      line-height: 26px; }
+  section.hero #soc-panel {
+    width: 80px;
+    text-align: left;
+    position: absolute;
+    margin-left: 856px; }
+    section.hero #soc-panel h6 {
+      font-size: 11px;
+      color: #2cb3f8;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 10px; }
+    section.hero #soc-panel ul {
+      margin: 0;
+      padding: 0 0 0 4px;
+      list-style: none; }
+      section.hero #soc-panel ul a {
+        display: block;
+        text-indent: -9999px;
+        margin-bottom: 10px; }
+    section.hero #soc-panel #fb-share a {
+      width: 24px;
+      height: 24px;
+      background: url(../img/fb-sm.png) no-repeat; }
+    section.hero #soc-panel #tw-share a {
+      width: 24px;
+      height: 20px;
+      background: url(../img/tw-sm.png) no-repeat; }
+    section.hero #soc-panel #pin-share a {
+      width: 26px;
+      height: 26px;
+      background: url(../img/pin-sm.png) no-repeat; }
+    section.hero #soc-panel #tumblr-share a {
+      width: 27px;
+      height: 27px;
+      background: url(../img/tmblr-sm.png) no-repeat; }
+
+.cta-text {
+  color: cyan;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 20px;
+  display: inline-block;
+  background: url(../img/drop-arrow.png) left top no-repeat;
+  padding-left: 28px; }
+  .cta-text:hover {
+    color: #fff;
+    background-position: left bottom; }

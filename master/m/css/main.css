@@ -1,0 +1,550 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+img {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+body {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial; }
+
+.wrapper {
+  margin: 0%;
+  min-width: 320px;
+  /* max-width:568px; */ }
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+.header-container {
+  border-bottom: 20px solid #e44d26; }
+
+.footer-container,
+.main aside {
+  border-top: 20px solid #e44d26; }
+
+.header-container,
+.footer-container,
+.main aside {
+  background: #f16529; }
+
+.title {
+  color: white; }
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+nav ul {
+  margin: 0;
+  padding: 0; }
+
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: #e44d26; }
+
+nav a:hover,
+nav a:visited {
+  color: white; }
+
+nav a:hover {
+  text-decoration: underline; }
+
+/* ==============
+    MOBILE: Main
+   ============== */
+.main {
+  padding: 30px 0; }
+
+.main article h1 {
+  font-size: 2em; }
+
+.main aside {
+  color: white;
+  padding: 0px 5% 10px; }
+
+.footer-container footer {
+  color: white;
+  padding: 20px 0; }
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+.ie7 .title {
+  padding-top: 20px; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  min-width: 100%;
+  font-weight: lighter; }
+  @media (min-width: 961px) {
+    body {
+      overflow-x: hidden;
+      width: 100%; } }
+
+img {
+  width: 100%;
+  height: auto; }
+
+section.hero {
+  clear: both;
+  text-align: center;
+  padding: 0; }
+  section.hero #video-callout {
+    margin: 0 auto; }
+  section.hero #hero-graphic {
+    display: block;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative; }
+  section.hero #hero-play-btn div {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/m-video-play-green.png) 0 top no-repeat;
+    margin: 0 auto;
+    z-index: 200;
+    position: relative;
+    text-indent: -9999px;
+    margin-top: -20px; }
+  section.hero #hero-play-btn:link, section.hero #hero-play-btn:visited {
+    text-decoration: none;
+    color: #5af93b;
+    font-size: 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 14px; }
+  section.hero #hero-play-btn:hover {
+    color: #fff; }
+    section.hero #hero-play-btn:hover div {
+      background-position: bottom; }
+  section.hero #hero-cta {
+    position: relative;
+    margin-top: -110px;
+    z-index: 200; }
+    section.hero #hero-cta h2 {
+      font-size: 22px;
+      color: #2cb3f8;
+      text-transform: uppercase; }
+      section.hero #hero-cta h2 sup {
+        font-size: 10px;
+        top: -1em; }
+    section.hero #hero-cta p {
+      font-size: 16px;
+      line-height: 26px; }
+
+.cta-text {
+  color: cyan;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 20px;
+  display: inline-block;
+  background: url(../img/drop-arrow.png) left top no-repeat;
+  padding-left: 28px; }
+  .cta-text:hover {
+    color: #fff;
+    background-position: left bottom; }
+
+header {
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: url(../img/m-blue-90.png) repeat;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  float: left;
+  margin: 0;
+  padding: 0; }
+  header #headerWrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; }
+    header #headerWrap h1 {
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 10px;
+      margin: 0;
+      z-index: 9999; }
+      header #headerWrap h1 a {
+        display: block;
+        width: inherit;
+        height: inherit; }
+    header #headerWrap h2 {
+      display: block;
+      float: right;
+      margin-right: 20px;
+      text-align: right; }
+      header #headerWrap h2 a {
+        display: block;
+        width: inherit;
+        height: inherit; }
+    header #headerWrap img {
+      max-width: 50%;
+      height: auto; }
+    header #headerWrap nav {
+      display: block;
+      float: left;
+      height: 70px;
+      margin: 0;
+      width: auto;
+      margin-left: 36px; }
+      header #headerWrap nav li {
+        display: inline-block;
+        height: 70px;
+        line-height: 70px;
+        float: none;
+        width: auto;
+        padding: 0;
+        margin: 0;
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #10459d; }
+        header #headerWrap nav li a {
+          margin: 0;
+          padding: 0;
+          width: inherit;
+          display: block;
+          line-height: 70px;
+          height: 70px;
+          float: none;
+          background: transparent; }
+        header #headerWrap nav li a.current {
+          text-decoration: none;
+          color: #10459d;
+          cursor: default; }
+    header #headerWrap #soc-nav {
+      height: 67px;
+      float: left;
+      padding-left: 7px;
+      overflow: hidden;
+      width: 108px;
+      padding-top: 3px; }
+      header #headerWrap #soc-nav h6 {
+        color: #66ccff;
+        font-size: 11px;
+        margin: 0; }
+      header #headerWrap #soc-nav ul {
+        margin: 0;
+        padding: 0; }
+        header #headerWrap #soc-nav ul li {
+          display: inline-block;
+          text-indent: -9999px;
+          padding-right: 15px; }
+          header #headerWrap #soc-nav ul li a {
+            line-height: 70px;
+            display: block; }
+        header #headerWrap #soc-nav ul #fb-follow {
+          width: 29px;
+          height: 29px;
+          background: url(../img/fb-lg.png) no-repeat; }
+        header #headerWrap #soc-nav ul #tw-follow {
+          width: 35px;
+          height: 28px;
+          background: url(../img/tw-lg.png) no-repeat; }
+
+#mainContainer {
+  color: #fff; }
+
+#mainContainer .sectionWrapper {
+  width: 100%;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: top center; }
+  #mainContainer .sectionWrapper.wrapperHero {
+    background-color: #000101;
+    float: left;
+    width: 100%; }
+  #mainContainer .sectionWrapper.wrapperRules {
+    padding: 20px 0 15px;
+    width: 100%; }
+  #mainContainer .sectionWrapper.wrappersubmitVideos {
+    background-color: #0088ce;
+    float: left;
+    padding: 20px 0 15px;
+    width: 100%; }
+  #mainContainer .sectionWrapper.wrapperOmniHeat {
+    background-color: black;
+    float: left;
+    padding: 20px 0 15px;
+    width: 100%; }
+  #mainContainer .sectionWrapper.wrapperFooter {
+    background-color: white;
+    float: left;
+    padding: 20px 0 15px;
+    width: 100%; }
+  #mainContainer .sectionWrapper section, #mainContainer .sectionWrapper footer {
+    width: 96%;
+    margin: 0 auto; }
+
+.rules {
+  padding-top: 70px; }
+  .rules a.close {
+    color: #000; }
+    .rules a.close:hover {
+      text-decoration: none; }
+  .rules h3 {
+    color: #0088ce; }
+  .rules p {
+    color: #0088ce !important;
+    margin: 0px;
+    padding: 0px;
+    color: black; }
+  .rules ol {
+    list-style: decimal;
+    color: #0088ce; }
+
+/* Submit Video	*/
+.submitVideos .viewFullSiteLink {
+  background: url(../img/m-submite_video_link_arrow.png) no-repeat top right;
+  text-transform: uppercase;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 30px 0 0; }
+.submitVideos p {
+  margin: 15px 0; }
+
+/* mobileShare */
+.mobileShare h3 {
+  font-size: 16px;
+  padding: 0;
+  margin: 35px 0 10px; }
+.mobileShare ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .mobileShare ul li {
+    float: left;
+    width: 48%;
+    margin: 0 0 10px;
+    padding: 0; }
+  .mobileShare ul li.leftcol {
+    padding: 0 2.5% 0 0; }
+
+/* Omni Heat */
+.omniHeat {
+  background: #000;
+  color: #FFF; }
+  .omniHeat div.omniHeatContent img {
+    float: left;
+    width: 97px;
+    margin: 0 10px 0 0; }
+  .omniHeat div.omniHeatContent p {
+    float: left;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+    margin: 25px 0 15px; }
+  .omniHeat .exploreOmniHeatLink {
+    background: url(../img/m-omni_heat_link_arrow.png) no-repeat top right;
+    text-transform: uppercase;
+    color: #e31d3b;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 30px 0 0; }
+  .omniHeat .omniheatLeft {
+    float: left;
+    width: 50%;
+    padding: 0 23% 20px 0; }
+  .omniHeat .omniheatRight {
+    float: right;
+    width: 27%;
+    padding: 0 0 20px 0; }
+
+/* Footer */
+footer {
+  color: #666666;
+  font-size: 12px;
+  margin: 20px auto;
+  padding: 0;
+  width: 100%;
+  text-align: center; }
+  footer p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 16px; }
+  footer div {
+    float: left;
+    width: 90%;
+    padding: 10px 5%;
+    text-align: center; }
+    footer div a:link, footer div a:hover, footer div a:visited {
+      color: #0088ce;
+      font-weight: bold;
+      text-decoration: none; }
+    footer div img.divline {
+      width: 24px;
+      height: auto; }
+  footer .logo {
+    padding: 10px 30%;
+    width: 40%; }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }

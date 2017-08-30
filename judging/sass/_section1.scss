@@ -1,0 +1,165 @@
+$midBlue: #2cb3f8;
+$lightCyan: cyan;
+$brightGreen: #5af93b;
+
+section.hero {
+  text-align: center;
+  padding-top: 64px + 70;
+  padding-bottom: 66px;
+  #video-callout {
+    display: block;
+    margin: 0 auto;
+  }
+  #hero-graphic {
+    display: block;
+    margin: 0 auto;
+    //margin-top: -42px;
+    top: 42px;
+    z-index: 100;
+    position: relative;
+  }
+  #hero-play-btn {
+    div {
+      display: block;
+      width: 40px;
+      height: 40px;
+      background: url(../img/video-play-green.png) 0 top no-repeat;
+      margin: 0 auto;
+      z-index: 200;
+      position: relative;
+      text-indent: -9999px;
+      margin-top: -20px;
+    }
+    &:link, &:visited {
+      text-decoration: none;
+      color: $brightGreen;
+      font-size: 10px;
+      line-height: 60px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top: 14px;
+    }
+    &:hover {
+      color: #fff;
+      div {
+        background-position: bottom;
+      }
+    }
+  }
+  #hero-cta {
+    position: relative;
+    margin-top: -110px;
+    z-index: 200;
+    h2 {
+      font-size: 22px;
+      color: $midBlue;
+      text-transform: uppercase;
+      sup {
+        font-size: 10px;
+        top: -1em;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+  #soc-panel {
+    width: 80px;
+    text-align: left;
+    position: absolute;
+    margin-left: 856px;
+    h6 {
+      font-size: 11px;
+      color: $midBlue;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    ul {
+      margin: 0;
+      padding: 0 0 0 4px;
+      list-style: none;
+      a {
+        display: block;
+        text-indent: -9999px;
+        margin-bottom: 10px;
+      }
+    }
+    #fb-share a {
+      width: 24px;
+      height: 24px;
+      background: url(../img/fb-sm.png) no-repeat;
+    }
+    #tw-share a {
+      width: 24px;
+      height: 20px;
+      background: url(../img/tw-sm.png) no-repeat;
+    }
+    #pin-share a {
+      width: 26px;
+      height: 26px;
+      background: url(../img/pin-sm.png) no-repeat;
+    }
+    #tumblr-share a {
+      width: 27px;
+      height: 27px;
+      background: url(../img/tmblr-sm.png) no-repeat;
+    }
+  }
+}
+
+.cta-text {
+  color: $lightCyan;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 20px;
+  display: inline-block;
+  background: url(../img/drop-arrow.png) left top no-repeat;
+  padding-left: 28px;
+  &:hover {
+    color: #fff;
+    background-position: left bottom;
+  }
+}
+
+.popupHero {
+   padding:0;
+   background-position:-100px middle;
+   section.hero {
+      padding:0px 0 0 0;
+      img.nav-front {
+         z-index:9999;
+         position:relative;
+      }
+   }
+}
+
+.wrapperVideo {
+  position: absolute;
+  z-index: 600;
+  margin-top: 70px;
+  display: none;
+  &.active {
+    display: block;
+  }
+  section.video {
+    width: 100%;
+    height: 500px;
+    padding-top: 90px;
+    img.videoClose {
+      display: inline-block;
+      text-indent: -9999px;
+      float: right;
+      cursor: pointer;
+      margin-bottom: 10px;
+      width: 15px;
+      height: 15px;
+    }
+    div.heroVideo {
+      margin-top: 10px;
+    }
+  }
+}

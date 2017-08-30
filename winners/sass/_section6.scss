@@ -1,0 +1,68 @@
+/* Instagram */
+
+#mainContainer .sectionWrapper section.instagram {
+  height: 690px;
+  img {
+    &.heading {
+      margin-top: 40px;
+    }
+  }
+  .imgbox {
+    position: relative;
+    width: 940px;
+    height: 375px;
+    margin-bottom: 20px;
+    background-image: url(../img/section6/imgbox_bg.jpg);
+    text-align: left;
+    a {
+      &.seeall {
+        text-transform: uppercase;
+        color: #3fed28;
+        padding-right: 28px;
+        height: 25px;
+        background: url(../img/m-omni_heat_link_arrow.png) 143px -46px no-repeat;
+      }
+      &.company {
+        position: absolute;
+        right: 14px;
+        bottom: 30px;
+      }
+    }
+    .rcol {
+      display: block;
+      width: 366px;
+      float: right;
+      margin-top: 51px;
+    }
+    h3 {
+      font-size: 25px;
+      font-style: italic;
+      text-transform: uppercase;
+      margin: 0 20px 0 0;
+      b {
+        font-style: normal;
+        font-size: 12px;
+        display: block;
+      }
+    }
+    p {
+      font-size: 16px;
+      b {
+        display: block;
+        color: #0288cf;
+        line-height: 24px;
+        padding-top: 5px;
+      }
+    }
+    ul {
+      list-style: none;
+      padding: 20px 0 0 40px;
+      width: 500px;
+      float: left;
+      li {
+        float: left;
+        margin: 0 20px 10px 0;
+      }
+    }
+  }
+}

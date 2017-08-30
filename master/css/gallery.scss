@@ -1,0 +1,235 @@
+@import 'flexslider.css';
+@import 'jquery.mCustomScrollbar.css';
+
+$playerHeight: 360px;
+$playerWidth: 940px;
+$thumbnailHeight: 170px;
+$thumbnailWidth: 300px;
+$videoWidth: 585px;
+$videoHeight: 340px;
+
+$playerOrange: #e46218;
+
+@mixin fadeTransition {
+	transition: opacity .25s ease-in-out;
+	moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.myHidden { 
+	opacity: 0 !important;
+	@include fadeTransition;
+}
+
+.gallery { 
+	height: $playerHeight + $thumbnailHeight + $thumbnailHeight;
+
+	&.loading { 
+		background-image: url('../img/ajax-loader.gif');
+		background-repeat: no-repeat;
+		background-position: center center;
+		.topThumbs, .bottomThumbs, .player { 
+			display: none;
+		}
+	}
+
+	.thumbs { 
+		margin: 0px;
+		padding: 0px;
+
+		&.topThumbs { 
+			.arrowBottom { 
+				background-image: url('../img/gallery_arrow_up.png');
+				visibility: hidden;
+			}
+			.arrowTop { 
+				display: none;
+			}
+			.thumb {
+				&.active { 
+					.arrowBottom {
+						visibility: visible !important;
+					}
+				}
+			}
+		}
+
+		&.bottomThumbs { 
+			margin-top: $playerHeight + 12;
+			height: $thumbnailHeight + 13;
+			.arrowTop { 
+				background-image: url('../img/gallery_arrow_down.png');
+				visibility: hidden;
+			}
+			.arrowBottom { 
+				display: none;
+			}
+			.thumb {
+				background-position: 0px 13px;
+				height: $thumbnailHeight + 13 !important;
+				&.active { 
+					.arrowTop { 
+						visibility: visible !important;
+					}
+				}
+			}
+		}
+
+		li.thumb { 
+			list-style: none;
+			float: left;
+			width: $thumbnailWidth;
+			height: $thumbnailHeight;
+			cursor: pointer;
+			background-size: 100%;
+			.ie8 & { 
+				background-size: $thumbnailWidth $thumbnailHeight;
+			}
+			background-repeat: no-repeat;
+			margin-right: 20px;
+			&:last-child { 
+				margin-right: 0px;
+			}
+
+			.border { 
+				//display: none;
+				opacity: 0;
+				position: absolute;
+				border: 6px solid white;
+				width: $thumbnailWidth - 12;
+				height: $thumbnailHeight - 12;
+				@include fadeTransition;
+			}
+
+			.titleWrapper { 
+				background: rgba(0, 0, 0, 0.8);
+				.ie8 & { 
+					background: rgb(0,0,0);
+				}
+				height: 40px;
+				float: none;
+				margin-top: $thumbnailHeight - 40;
+				text-align: left;
+				font-size: 11px;
+				p { 
+					margin: 0px;
+					padding: 0px;
+					line-height: 15px;
+				}
+				.author { 
+					color: #0088ce;
+					font-weight: bold;
+					padding-top: 5px;
+					margin-left: 10px;
+				}
+				.title { 
+					color: white;
+					margin-left: 10px;
+				}
+			}
+
+			.arrowTop, .arrowBottom { 
+				height: 13px;
+				overflow: hidden;
+				background-repeat: no-repeat;
+				background-position: top center;
+			}
+
+			&.active { 
+				.border { 
+					//display: block;
+				    opacity: 1;
+				    border-color: $playerOrange;
+				   transition: opacity .25s ease-in-out;
+				   -moz-transition: opacity .25s ease-in-out;
+				   -webkit-transition: opacity .25s ease-in-out;
+				}
+				&:hover { 
+					.border { 
+						border-color: $playerOrange;
+					}
+					
+				}
+			}
+			&:hover { 
+				.border { 
+					border-color: white;
+					opacity: 1;
+					transition: opacity .25s ease-in-out;
+				   -moz-transition: opacity .25s ease-in-out;
+				   -webkit-transition: opacity .25s ease-in-out;
+				}
+			}
+		}
+	}
+	
+	.player { 
+		position: absolute;
+		//top: $thumbnailHeight + 12;
+		margin-top: $thumbnailHeight + 12;
+		height: $playerHeight;
+		width: $playerWidth;
+		background-color: rgba(227, 91, 21, 0.9);
+		.ie8 & { 
+			background-color: rgb(227, 91, 21);
+		}
+		z-index: 2;
+		&.loading { 
+			background-image: url('../img/ajax-loader.gif');
+			background-repeat: no-repeat;
+			background-position: 752px 170px;
+		}
+		.theVideo { 
+			display: inline-block;
+			float: left;
+			width: $videoWidth;
+			height: $videoHeight;
+			margin: 10px;
+			background-color: black;
+			opacity: 1;
+			@include fadeTransition;
+		}
+		.details { 
+			display: inline-block;
+			float: left;
+			margin-top: 26px;
+			height: 310px;
+			width: 299px;
+			padding: 0 0 0 25px;
+			text-align: left;
+			font-weight: lighter;
+			opacity: 1;
+			@include fadeTransition;
+
+			.entrantTitle { 
+				font-size: 20px;
+				line-height: 22px;
+				
+			}
+			.entrantName { 
+				font-size: 15px;
+				line-height: 22px;
+
+			}
+			.location { 
+				font-size: 15px;
+				line-height: 22px;
+			}
+			.description { 
+				font-size: 16px;
+				line-height: 22px;
+				height: 215px;
+				margin-top: 20px;
+			}
+		}
+		
+	}
+
+}
+
+.flexslider { 
+	background-color: transparent;
+	border: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}

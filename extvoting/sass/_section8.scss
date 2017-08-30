@@ -1,0 +1,42 @@
+//canadian spotify section
+section.spotify { 
+	padding-top: 43px;
+	h3 { 
+		margin: 0 auto;
+		padding: 0px;
+		width: 816px;
+		height: 60px;
+		background-image: url('../img/For-those-about-to-cork.png');
+		background-repeat: no-repeat;
+		text-indent: -9999px;
+	}
+	p { 
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+	.contentWrapper { 
+		padding-top: 18px;
+		padding-bottom: 10px;
+		background: rgb(0,0,0);
+		background: rgba(0,0,0,0.6);
+		width: 940px;
+		margin-left: 10px;
+		.spotifyWrapper { 
+			margin-left: 124px;
+			float: left;
+			display: inline-block;
+			width: 300px;
+			height: 380px;
+		}
+		.canadaMessage {
+			margin-left: 124px;
+			float: left;
+			display: inline-block;
+		}
+		.faceHole { 
+			display: inline-block;
+			float: left;
+			margin-left: 100px;
+		}
+	}
+}

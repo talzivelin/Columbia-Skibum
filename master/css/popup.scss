@@ -1,0 +1,123 @@
+$lightBlue: #66ccff;
+
+.contest-rules {
+	header {
+		#soc-nav { float: right !important; }
+		position: absolute;
+	}
+
+	#mainContainer {
+
+		text-align: left !important;
+		padding-top: 207px;
+
+		p {
+			color: #0088ce !important;
+		}
+
+		h3 {
+			color: #0088ce !important;
+			font-size: 16px;
+			line-height: 26px;
+		}
+
+		section { width: 940px; }
+
+		.popup-hero {
+			position: absolute;
+			display: block;
+			margin: 0 auto;
+			top: -4px;
+			z-index: 8000;	
+			padding: 0 84px;
+		}
+
+		.popup-banner {
+			position: absolute;
+			top: 66px;
+			z-index: 1000;
+		}
+
+		.sectionWrapper.wrapperOmniHeat {
+			background-color: black;
+			margin-top: 74px;
+			
+			p {
+				color: #fff !important;
+			}
+		}
+
+		.sectionWrapper.wrapperProductCallout {
+			text-align: center;
+
+			p {
+				color: #fff !important;
+			}
+		}
+
+		#soc-nav {
+            
+			height: 67px;
+			float: left;
+			padding-left: 7px;
+			overflow: hidden;
+			width: 108px;
+			padding-top: 3px;
+			position: absolute;
+			margin-left: 852px;
+			margin-top: -228px;
+			z-index: 10000;
+
+            h6 {
+                color: $lightBlue;
+                font-size: 11px;
+                margin: 0;
+            }
+
+            ul {
+
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: inline-block;
+                    text-indent: -9999px;
+                    padding-right: 15px;
+                    float:left;
+
+                    a {
+                        line-height: 70px;
+                        display: block;
+                    }
+
+                }           
+
+                #fb-follow {
+                    width: 29px;
+                    height: 29px;
+                    background: url(../img/fb-lg-2.png) no-repeat;
+                }
+
+                #tw-follow {
+                    width: 29px;
+                    height: 30px;
+                    background: url(../img/tw-lg.png) no-repeat;
+                }
+            }
+        }
+
+        ol.rules { 
+        	list-style-type: decimal;
+        	color: #0088ce;
+        	
+        }
+
+		footer {
+			p {
+				color: #666 !important;
+				font-size: 12px;
+				line-height: 22px;
+			}
+		}
+	}
+}

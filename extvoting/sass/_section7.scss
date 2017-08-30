@@ -1,0 +1,97 @@
+//poll section
+#poll { 
+	width: 960px;
+	margin: 0 auto;
+	color: white;
+	background-color: #301846;
+	background-image: url('../img/poll_bg.png');
+	background-repeat: no-repeat;
+	height: 168px;
+	text-align: left;
+	.nextQuestion { 
+		display: inline-block;
+		position: absolute;
+      white-space:nowrap;
+		width: auto;
+		padding: 10px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		margin-left: 770px;
+		margin-top: 57px;
+	}
+	.question, .loading, .noMoreQuestions { 
+		padding-left: 90px;
+		padding-top: 23px;
+		color: white;
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.noMoreQuestions { 
+		padding-left: 120px;
+		padding-top: 60px;
+	}
+	.answers { 
+		padding-left: 129px;
+		padding-top: 3px;
+		.answer { 
+			.checkbox { 
+				cursor: pointer;
+				display: inline-block;
+				width: 23px;
+				height: 23px;
+				background-image: url('../img/poll_check.png');
+				background-position: 0 -23px;
+				&.checked { 
+					background-position: 0px 0px;
+				}
+				position: relative;
+				top: 6px;
+				margin-right: 5px;
+			}
+			> span { 
+				cursor: pointer;
+				font-size: 16px;
+				color: #3fed28;
+				line-height: 16px;
+				width: 262px;
+				display: inline-block;
+			}
+
+			.votes { 
+				display: inline-block;
+				width: 350px;
+				height: 18px;
+            .total_vote {
+               width:240px;
+            }
+				.bar { 
+               position:relative;
+					display: inline-block;
+					width: 50%;
+					height: 18px;
+					background-color: #9966cc;
+					margin-right: 5px;
+					&.winner { 
+						background-color: #3fed28;
+					}
+				}
+				span { 
+					font-size: 16px;
+					line-height: 24px;
+					position: absolute;
+               right:-25px;
+               width:20px;
+					top: -3px;
+					color: #9966cc;
+					&.winner { 
+						color: #3fed28;
+					}
+				}
+			}
+
+		}
+
+	}
+
+}
